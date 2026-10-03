@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0121B34FE4CF4898168F7019 /* SingleCategoryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C7F982D0E8CA3677B005DE /* SingleCategoryWidget.swift */; };
+		091315DD9C1C3B802354A8CE /* MultiCategoryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA7626CCC70C2EB8E117FEB /* MultiCategoryWidget.swift */; };
+		0B435F46767E680E095CE52B /* UrgencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D20849DE50CAB5AC57A36 /* UrgencyCalculator.swift */; };
+		0DBAB9442222F60E766306FC /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342B3F1FC9E9427445FEB02D /* DeepLinkHandler.swift */; };
+		15CC9E04F60A6D06409E72EF /* DDReminderRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544EEEB9800271F05BD52AB8 /* DDReminderRule.swift */; };
+		1B61CD99D79485C453EF2B11 /* DDActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A794950C73825CD2E80A96D3 /* DDActionItem.swift */; };
+		1D38E4CDE76E7D660881D7FF /* ProgressCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BB81DE6331DA4D912C8157 /* ProgressCalculator.swift */; };
+		1F2F1FE4E58390527D9CBF45 /* DeadlineQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38541880A142D91682B82CE3 /* DeadlineQueryService.swift */; };
+		1F810D53D31047F1FF1BF84B /* DeadlineBoardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087161CFCEAB1204E20F596 /* DeadlineBoardApp.swift */; };
+		1FD4C7A197B1B2999927B758 /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D180BEC1B3F4920E330475C8 /* CategoryCardView.swift */; };
+		27E6276020F3C918FBDDC4A4 /* DDActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A794950C73825CD2E80A96D3 /* DDActionItem.swift */; };
+		2D8DE6D7E228C567F7574FEF /* CategoryEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6B68096630DD508EA36EE7 /* CategoryEditorView.swift */; };
+		2FA19315CF93E3139BC1CDF0 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76DB50E89BB123279C6D27 /* AppConstants.swift */; };
+		35BEB518289E8D0ADDB15685 /* ModelContextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C193B8F5DC301B9094AB81 /* ModelContextExtension.swift */; };
+		3BB2F8B9BF9D8F84473EEC7E /* DDDeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD71E12414143B5E5339D4 /* DDDeadline.swift */; };
+		3F8B78D2D80C47EF98F03855 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76DB50E89BB123279C6D27 /* AppConstants.swift */; };
+		3FF7D861F099C3C8BF3E7455 /* DDActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A794950C73825CD2E80A96D3 /* DDActionItem.swift */; };
+		40A7259263E40CFBF62534E9 /* DDCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5C345B16814F527FCF426 /* DDCategory.swift */; };
+		505F7E222026C5B3DE293239 /* UrgencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D20849DE50CAB5AC57A36 /* UrgencyCalculator.swift */; };
+		6517792CF940A74B69ED8FC4 /* ArchivedCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C478BCEC5672B1253FA0809 /* ArchivedCategoriesView.swift */; };
+		683D78464BD3C9FBBE5D2367 /* DDCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5C345B16814F527FCF426 /* DDCategory.swift */; };
+		68537A07B2DE60DF57AEE2F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7EF3589B7962FD1C4A1890 /* Assets.xcassets */; };
+		69BC1939F3043C17C6159A3C /* DeadlineRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4051A52F935247E71FFB02 /* DeadlineRowView.swift */; };
+		7123DB2A843D3F65688EF4D7 /* DateFormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EB9A97E94E9BD89500340 /* DateFormatService.swift */; };
+		73148E8B9B5C8FD88DBC585C /* DeadlineBoardWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0DAC0796D6CACD1DDCBBEE78 /* DeadlineBoardWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		75EF5E1123ECC87FD7B0C6A1 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502B9A98C920D953164534D /* ColorExtension.swift */; };
+		840688E42D661094F9DEDB39 /* DDDeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD71E12414143B5E5339D4 /* DDDeadline.swift */; };
+		8648E547490F0CE8726EBE7B /* ProgressCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BB81DE6331DA4D912C8157 /* ProgressCalculator.swift */; };
+		8B03809A05B27AA753232E8F /* ModelContextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C193B8F5DC301B9094AB81 /* ModelContextExtension.swift */; };
+		8C357BDE8E05CA90B9217D2C /* DeadlineEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1782383F19BB4B2BE87CB12 /* DeadlineEditorView.swift */; };
+		908C687A46F6CAEA37252500 /* DDReminderRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544EEEB9800271F05BD52AB8 /* DDReminderRule.swift */; };
+		943B6D1AA96E1674DC5762FB /* DeadlineBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE011706059C825226C9AA /* DeadlineBoardTests.swift */; };
+		963E7938E294C5EC6DA00FE4 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD680972C5276541BC56BBD7 /* NotificationService.swift */; };
+		9DF7A66B6E3953FFB75D35C2 /* DateFormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EB9A97E94E9BD89500340 /* DateFormatService.swift */; };
+		9F5DC0559CBDB357754B092A /* UrgencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D20849DE50CAB5AC57A36 /* UrgencyCalculator.swift */; };
+		A151887F03001510627AC4CD /* SharedModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78FDE5859B4ED082BB9DD71 /* SharedModelContainer.swift */; };
+		A173B494144E32FA45A10BD4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4DB05C5BAD5EBFCEB24F09 /* SettingsView.swift */; };
+		A31C8A8D04755F53EAC4AC0C /* DDReminderRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544EEEB9800271F05BD52AB8 /* DDReminderRule.swift */; };
+		A647CABB9FC26F0524AF1D86 /* DeadlineQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38541880A142D91682B82CE3 /* DeadlineQueryService.swift */; };
+		A72F4A9E467649FF11DA0C51 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD680972C5276541BC56BBD7 /* NotificationService.swift */; };
+		AAC6FF48D09FDC8756EB4560 /* ProgressWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D5BF8E834ADFE96C30F5FF /* ProgressWidget.swift */; };
+		B362ED4055EACD1898085668 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD680972C5276541BC56BBD7 /* NotificationService.swift */; };
+		B92E2EB0D2A0D07459F56E1C /* DDDeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD71E12414143B5E5339D4 /* DDDeadline.swift */; };
+		C205F4A0A18DED3A8403FAC1 /* DateFormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EB9A97E94E9BD89500340 /* DateFormatService.swift */; };
+		C8AC0661EF6C8454D3CA9CA0 /* SharedModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78FDE5859B4ED082BB9DD71 /* SharedModelContainer.swift */; };
+		CAE379A7B49EEA9E02531844 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4130DD3890A8ED31E5DFC5F /* DashboardView.swift */; };
+		CDF691D7F1944F7A65F83AFE /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76DB50E89BB123279C6D27 /* AppConstants.swift */; };
+		D236E7387A54D9E6A4D9F3C7 /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8703E635E2E01739D5835 /* CategoryDetailView.swift */; };
+		D4162CC33A5A9039CAE6291A /* ModelContextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C193B8F5DC301B9094AB81 /* ModelContextExtension.swift */; };
+		DDB78B7B35D2795196614014 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502B9A98C920D953164534D /* ColorExtension.swift */; };
+		E3ABE52FA6FEB6546DE70D57 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502B9A98C920D953164534D /* ColorExtension.swift */; };
+		E7CFDCE1E0F03BA09E6D0824 /* ProgressCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BB81DE6331DA4D912C8157 /* ProgressCalculator.swift */; };
+		EA8446CB132000C950E7366E /* DeadlineBoardWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D847924B591F3CA7CD270233 /* DeadlineBoardWidgetBundle.swift */; };
+		EAD2462F4515DD4EC6E856AA /* DeadlineQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38541880A142D91682B82CE3 /* DeadlineQueryService.swift */; };
+		EE4BCE9F371242DC6FD5E998 /* DDCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5C345B16814F527FCF426 /* DDCategory.swift */; };
+		F8739E6B8153B2F2E45863D5 /* SharedModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78FDE5859B4ED082BB9DD71 /* SharedModelContainer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F39AB32BE3FC9AEB6173CE26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E800CBDC3226996F4026EBCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1539793534305F0E7AF14272;
+			remoteInfo = DeadlineBoardWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F88F4B0A429343112F859AE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				73148E8B9B5C8FD88DBC585C /* DeadlineBoardWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04AE011706059C825226C9AA /* DeadlineBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineBoardTests.swift; sourceTree = "<group>"; };
+		05C7F982D0E8CA3677B005DE /* SingleCategoryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCategoryWidget.swift; sourceTree = "<group>"; };
+		0618D7CD0626962565B1D336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0DAC0796D6CACD1DDCBBEE78 /* DeadlineBoardWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeadlineBoardWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		105EB9A97E94E9BD89500340 /* DateFormatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatService.swift; sourceTree = "<group>"; };
+		12D5BF8E834ADFE96C30F5FF /* ProgressWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressWidget.swift; sourceTree = "<group>"; };
+		1F5A9B0126B6496B040580A0 /* DeadlineBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeadlineBoard.entitlements; sourceTree = "<group>"; };
+		2E6B68096630DD508EA36EE7 /* CategoryEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEditorView.swift; sourceTree = "<group>"; };
+		30E8703E635E2E01739D5835 /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
+		342B3F1FC9E9427445FEB02D /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
+		38541880A142D91682B82CE3 /* DeadlineQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineQueryService.swift; sourceTree = "<group>"; };
+		5087161CFCEAB1204E20F596 /* DeadlineBoardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineBoardApp.swift; sourceTree = "<group>"; };
+		544EEEB9800271F05BD52AB8 /* DDReminderRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDReminderRule.swift; sourceTree = "<group>"; };
+		59AD71E12414143B5E5339D4 /* DDDeadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDDeadline.swift; sourceTree = "<group>"; };
+		7DF5C345B16814F527FCF426 /* DDCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDCategory.swift; sourceTree = "<group>"; };
+		93C193B8F5DC301B9094AB81 /* ModelContextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelContextExtension.swift; sourceTree = "<group>"; };
+		9C478BCEC5672B1253FA0809 /* ArchivedCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedCategoriesView.swift; sourceTree = "<group>"; };
+		A1782383F19BB4B2BE87CB12 /* DeadlineEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineEditorView.swift; sourceTree = "<group>"; };
+		A794950C73825CD2E80A96D3 /* DDActionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDActionItem.swift; sourceTree = "<group>"; };
+		AD4051A52F935247E71FFB02 /* DeadlineRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineRowView.swift; sourceTree = "<group>"; };
+		B78FDE5859B4ED082BB9DD71 /* SharedModelContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModelContainer.swift; sourceTree = "<group>"; };
+		C4130DD3890A8ED31E5DFC5F /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C502B9A98C920D953164534D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		C6E7D3F121986396C6CA0E3F /* DeadlineBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeadlineBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7EF3589B7962FD1C4A1890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD680972C5276541BC56BBD7 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		D180BEC1B3F4920E330475C8 /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
+		D847924B591F3CA7CD270233 /* DeadlineBoardWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineBoardWidgetBundle.swift; sourceTree = "<group>"; };
+		D8E733992862B51FE7D82CF4 /* DeadlineBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeadlineBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF42BB94B3808C10E92B46B6 /* DeadlineBoardWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeadlineBoardWidget.entitlements; sourceTree = "<group>"; };
+		E9BB81DE6331DA4D912C8157 /* ProgressCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCalculator.swift; sourceTree = "<group>"; };
+		EC76DB50E89BB123279C6D27 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		EEA7626CCC70C2EB8E117FEB /* MultiCategoryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCategoryWidget.swift; sourceTree = "<group>"; };
+		F58D20849DE50CAB5AC57A36 /* UrgencyCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgencyCalculator.swift; sourceTree = "<group>"; };
+		FE4DB05C5BAD5EBFCEB24F09 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0AC20BA562CACDC719520322 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C478BCEC5672B1253FA0809 /* ArchivedCategoriesView.swift */,
+				D180BEC1B3F4920E330475C8 /* CategoryCardView.swift */,
+				30E8703E635E2E01739D5835 /* CategoryDetailView.swift */,
+				2E6B68096630DD508EA36EE7 /* CategoryEditorView.swift */,
+				C4130DD3890A8ED31E5DFC5F /* DashboardView.swift */,
+				A1782383F19BB4B2BE87CB12 /* DeadlineEditorView.swift */,
+				AD4051A52F935247E71FFB02 /* DeadlineRowView.swift */,
+				342B3F1FC9E9427445FEB02D /* DeepLinkHandler.swift */,
+				FE4DB05C5BAD5EBFCEB24F09 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1038C3FD6F42BB2478408AFD /* DeadlineBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CB7EF3589B7962FD1C4A1890 /* Assets.xcassets */,
+				1F5A9B0126B6496B040580A0 /* DeadlineBoard.entitlements */,
+				5087161CFCEAB1204E20F596 /* DeadlineBoardApp.swift */,
+				7D564F9CB4F9E46A3CC26F4A /* ViewModels */,
+				0AC20BA562CACDC719520322 /* Views */,
+			);
+			path = DeadlineBoard;
+			sourceTree = "<group>";
+		};
+		26B23C052C01675D26DCD997 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3C5993122F0A305032D7BD5C /* Constants */,
+				B2B7B323B0DEBD87939DBD36 /* Extensions */,
+				951CCDD597B2ECBFC562EA91 /* Models */,
+				4CD80E4A1FC995ACB1EE7E25 /* Services */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		34D517D1D4317A6EA10AF12F = {
+			isa = PBXGroup;
+			children = (
+				1038C3FD6F42BB2478408AFD /* DeadlineBoard */,
+				389F19B35921F82A6F567533 /* DeadlineBoardTests */,
+				6C59FDA21291DBDA07B947FD /* DeadlineBoardWidget */,
+				26B23C052C01675D26DCD997 /* Shared */,
+				AD2FDD5D4B92EBFAD263565F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		389F19B35921F82A6F567533 /* DeadlineBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				04AE011706059C825226C9AA /* DeadlineBoardTests.swift */,
+			);
+			path = DeadlineBoardTests;
+			sourceTree = "<group>";
+		};
+		3C5993122F0A305032D7BD5C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EC76DB50E89BB123279C6D27 /* AppConstants.swift */,
+				C502B9A98C920D953164534D /* ColorExtension.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4CD80E4A1FC995ACB1EE7E25 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				105EB9A97E94E9BD89500340 /* DateFormatService.swift */,
+				38541880A142D91682B82CE3 /* DeadlineQueryService.swift */,
+				CD680972C5276541BC56BBD7 /* NotificationService.swift */,
+				E9BB81DE6331DA4D912C8157 /* ProgressCalculator.swift */,
+				B78FDE5859B4ED082BB9DD71 /* SharedModelContainer.swift */,
+				F58D20849DE50CAB5AC57A36 /* UrgencyCalculator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6C59FDA21291DBDA07B947FD /* DeadlineBoardWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DF42BB94B3808C10E92B46B6 /* DeadlineBoardWidget.entitlements */,
+				D847924B591F3CA7CD270233 /* DeadlineBoardWidgetBundle.swift */,
+				0618D7CD0626962565B1D336 /* Info.plist */,
+				EEA7626CCC70C2EB8E117FEB /* MultiCategoryWidget.swift */,
+				12D5BF8E834ADFE96C30F5FF /* ProgressWidget.swift */,
+				05C7F982D0E8CA3677B005DE /* SingleCategoryWidget.swift */,
+			);
+			path = DeadlineBoardWidget;
+			sourceTree = "<group>";
+		};
+		7D564F9CB4F9E46A3CC26F4A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		951CCDD597B2ECBFC562EA91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A794950C73825CD2E80A96D3 /* DDActionItem.swift */,
+				7DF5C345B16814F527FCF426 /* DDCategory.swift */,
+				59AD71E12414143B5E5339D4 /* DDDeadline.swift */,
+				544EEEB9800271F05BD52AB8 /* DDReminderRule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD2FDD5D4B92EBFAD263565F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8E733992862B51FE7D82CF4 /* DeadlineBoard.app */,
+				C6E7D3F121986396C6CA0E3F /* DeadlineBoardTests.xctest */,
+				0DAC0796D6CACD1DDCBBEE78 /* DeadlineBoardWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2B7B323B0DEBD87939DBD36 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				93C193B8F5DC301B9094AB81 /* ModelContextExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1539793534305F0E7AF14272 /* DeadlineBoardWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E833D0C07790F8F3FF8719DA /* Build configuration list for PBXNativeTarget "DeadlineBoardWidgetExtension" */;
+			buildPhases = (
+				FB439A46983B3581D503C3C1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeadlineBoardWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = DeadlineBoardWidgetExtension;
+			productReference = 0DAC0796D6CACD1DDCBBEE78 /* DeadlineBoardWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C52EA2A778D8A66AE37172D4 /* DeadlineBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79C1D2C62AF460D9C0145C62 /* Build configuration list for PBXNativeTarget "DeadlineBoard" */;
+			buildPhases = (
+				4582884A044DE1629BB0E18A /* Sources */,
+				CCEA61EE5A2C666970101369 /* Resources */,
+				8F88F4B0A429343112F859AE /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3C71710EA041B6D1297C3C5 /* PBXTargetDependency */,
+			);
+			name = DeadlineBoard;
+			packageProductDependencies = (
+			);
+			productName = DeadlineBoard;
+			productReference = D8E733992862B51FE7D82CF4 /* DeadlineBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE19EA5449BF0B91FBD3A489 /* DeadlineBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28564DF00285AA2D335401CE /* Build configuration list for PBXNativeTarget "DeadlineBoardTests" */;
+			buildPhases = (
+				55E3476DF2D08785DFD0DB95 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeadlineBoardTests;
+			packageProductDependencies = (
+			);
+			productName = DeadlineBoardTests;
+			productReference = C6E7D3F121986396C6CA0E3F /* DeadlineBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E800CBDC3226996F4026EBCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					1539793534305F0E7AF14272 = {
+						ProvisioningStyle = Automatic;
+					};
+					C52EA2A778D8A66AE37172D4 = {
+						ProvisioningStyle = Automatic;
+					};
+					FE19EA5449BF0B91FBD3A489 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E5F44C2FB659A96976736188 /* Build configuration list for PBXProject "DeadlineBoard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 34D517D1D4317A6EA10AF12F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AD2FDD5D4B92EBFAD263565F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C52EA2A778D8A66AE37172D4 /* DeadlineBoard */,
+				1539793534305F0E7AF14272 /* DeadlineBoardWidgetExtension */,
+				FE19EA5449BF0B91FBD3A489 /* DeadlineBoardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCEA61EE5A2C666970101369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68537A07B2DE60DF57AEE2F0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4582884A044DE1629BB0E18A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA19315CF93E3139BC1CDF0 /* AppConstants.swift in Sources */,
+				6517792CF940A74B69ED8FC4 /* ArchivedCategoriesView.swift in Sources */,
+				1FD4C7A197B1B2999927B758 /* CategoryCardView.swift in Sources */,
+				D236E7387A54D9E6A4D9F3C7 /* CategoryDetailView.swift in Sources */,
+				2D8DE6D7E228C567F7574FEF /* CategoryEditorView.swift in Sources */,
+				E3ABE52FA6FEB6546DE70D57 /* ColorExtension.swift in Sources */,
+				1B61CD99D79485C453EF2B11 /* DDActionItem.swift in Sources */,
+				40A7259263E40CFBF62534E9 /* DDCategory.swift in Sources */,
+				840688E42D661094F9DEDB39 /* DDDeadline.swift in Sources */,
+				15CC9E04F60A6D06409E72EF /* DDReminderRule.swift in Sources */,
+				CAE379A7B49EEA9E02531844 /* DashboardView.swift in Sources */,
+				C205F4A0A18DED3A8403FAC1 /* DateFormatService.swift in Sources */,
+				1F810D53D31047F1FF1BF84B /* DeadlineBoardApp.swift in Sources */,
+				8C357BDE8E05CA90B9217D2C /* DeadlineEditorView.swift in Sources */,
+				1F2F1FE4E58390527D9CBF45 /* DeadlineQueryService.swift in Sources */,
+				69BC1939F3043C17C6159A3C /* DeadlineRowView.swift in Sources */,
+				0DBAB9442222F60E766306FC /* DeepLinkHandler.swift in Sources */,
+				D4162CC33A5A9039CAE6291A /* ModelContextExtension.swift in Sources */,
+				A72F4A9E467649FF11DA0C51 /* NotificationService.swift in Sources */,
+				E7CFDCE1E0F03BA09E6D0824 /* ProgressCalculator.swift in Sources */,
+				A173B494144E32FA45A10BD4 /* SettingsView.swift in Sources */,
+				A151887F03001510627AC4CD /* SharedModelContainer.swift in Sources */,
+				0B435F46767E680E095CE52B /* UrgencyCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E3476DF2D08785DFD0DB95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF691D7F1944F7A65F83AFE /* AppConstants.swift in Sources */,
+				75EF5E1123ECC87FD7B0C6A1 /* ColorExtension.swift in Sources */,
+				3FF7D861F099C3C8BF3E7455 /* DDActionItem.swift in Sources */,
+				EE4BCE9F371242DC6FD5E998 /* DDCategory.swift in Sources */,
+				3BB2F8B9BF9D8F84473EEC7E /* DDDeadline.swift in Sources */,
+				908C687A46F6CAEA37252500 /* DDReminderRule.swift in Sources */,
+				9DF7A66B6E3953FFB75D35C2 /* DateFormatService.swift in Sources */,
+				943B6D1AA96E1674DC5762FB /* DeadlineBoardTests.swift in Sources */,
+				A647CABB9FC26F0524AF1D86 /* DeadlineQueryService.swift in Sources */,
+				35BEB518289E8D0ADDB15685 /* ModelContextExtension.swift in Sources */,
+				963E7938E294C5EC6DA00FE4 /* NotificationService.swift in Sources */,
+				8648E547490F0CE8726EBE7B /* ProgressCalculator.swift in Sources */,
+				F8739E6B8153B2F2E45863D5 /* SharedModelContainer.swift in Sources */,
+				505F7E222026C5B3DE293239 /* UrgencyCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB439A46983B3581D503C3C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8B78D2D80C47EF98F03855 /* AppConstants.swift in Sources */,
+				DDB78B7B35D2795196614014 /* ColorExtension.swift in Sources */,
+				27E6276020F3C918FBDDC4A4 /* DDActionItem.swift in Sources */,
+				683D78464BD3C9FBBE5D2367 /* DDCategory.swift in Sources */,
+				B92E2EB0D2A0D07459F56E1C /* DDDeadline.swift in Sources */,
+				A31C8A8D04755F53EAC4AC0C /* DDReminderRule.swift in Sources */,
+				7123DB2A843D3F65688EF4D7 /* DateFormatService.swift in Sources */,
+				EA8446CB132000C950E7366E /* DeadlineBoardWidgetBundle.swift in Sources */,
+				EAD2462F4515DD4EC6E856AA /* DeadlineQueryService.swift in Sources */,
+				8B03809A05B27AA753232E8F /* ModelContextExtension.swift in Sources */,
+				091315DD9C1C3B802354A8CE /* MultiCategoryWidget.swift in Sources */,
+				B362ED4055EACD1898085668 /* NotificationService.swift in Sources */,
+				1D38E4CDE76E7D660881D7FF /* ProgressCalculator.swift in Sources */,
+				AAC6FF48D09FDC8756EB4560 /* ProgressWidget.swift in Sources */,
+				C8AC0661EF6C8454D3CA9CA0 /* SharedModelContainer.swift in Sources */,
+				0121B34FE4CF4898168F7019 /* SingleCategoryWidget.swift in Sources */,
+				9F5DC0559CBDB357754B092A /* UrgencyCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3C71710EA041B6D1297C3C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1539793534305F0E7AF14272 /* DeadlineBoardWidgetExtension */;
+			targetProxy = F39AB32BE3FC9AEB6173CE26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0652FEB76B8496A859E7A9A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5;
+			};
+			name = Release;
+		};
+		23C132445962C01488DDF842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadlineboard.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "";
+			};
+			name = Release;
+		};
+		7BEF057A2F884E5D74219913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadlineboard.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "";
+			};
+			name = Debug;
+		};
+		83C88B6C7AAFB0C8F07B4968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeadlineBoardWidget/DeadlineBoardWidget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3D7NGLAC4R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeadlineBoardWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadlineboard.app.widget;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		85F64220B5709AB6C6973F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeadlineBoardWidget/DeadlineBoardWidget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3D7NGLAC4R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeadlineBoardWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadlineboard.app.widget;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		9D2FA31102A88DEF819BDF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5;
+			};
+			name = Debug;
+		};
+		9EDD443D1B9C43F551211C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DeadlineBoard/DeadlineBoard.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3D7NGLAC4R;
+				INFOPLIST_FILE = DeadlineBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadlineboard.app;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		E4685D6B1E027B9BAABE74B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DeadlineBoard/DeadlineBoard.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3D7NGLAC4R;
+				INFOPLIST_FILE = DeadlineBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadlineboard.app;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28564DF00285AA2D335401CE /* Build configuration list for PBXNativeTarget "DeadlineBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEF057A2F884E5D74219913 /* Debug */,
+				23C132445962C01488DDF842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		79C1D2C62AF460D9C0145C62 /* Build configuration list for PBXNativeTarget "DeadlineBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EDD443D1B9C43F551211C14 /* Debug */,
+				E4685D6B1E027B9BAABE74B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E5F44C2FB659A96976736188 /* Build configuration list for PBXProject "DeadlineBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D2FA31102A88DEF819BDF2E /* Debug */,
+				0652FEB76B8496A859E7A9A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E833D0C07790F8F3FF8719DA /* Build configuration list for PBXNativeTarget "DeadlineBoardWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C88B6C7AAFB0C8F07B4968 /* Debug */,
+				85F64220B5709AB6C6973F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E800CBDC3226996F4026EBCA /* Project object */;
+}
