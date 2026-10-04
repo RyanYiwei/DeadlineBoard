@@ -24,18 +24,7 @@ enum AppConstants {
     }
 
     enum CategoryColors {
-        static let all: [(name: String, hex: String)] = [
-            ("蓝色", "#007AFF"),
-            ("紫色", "#AF52DE"),
-            ("粉色", "#FF2D55"),
-            ("红色", "#FF3B30"),
-            ("橙色", "#FF9500"),
-            ("黄色", "#FFCC00"),
-            ("绿色", "#34C759"),
-            ("青色", "#5AC8FA"),
-            ("靛蓝", "#5856D6"),
-            ("棕色", "#A2845E"),
-        ]
+        static let all: [(name: String, hex: String)] = CategoryPalette.all.map { ($0.name, $0.hex) }
     }
 
     enum CategoryIcons {

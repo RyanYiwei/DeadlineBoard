@@ -26,6 +26,7 @@
 		3FF7D861F099C3C8BF3E7455 /* DDActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A794950C73825CD2E80A96D3 /* DDActionItem.swift */; };
 		40A7259263E40CFBF62534E9 /* DDCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5C345B16814F527FCF426 /* DDCategory.swift */; };
 		505F7E222026C5B3DE293239 /* UrgencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D20849DE50CAB5AC57A36 /* UrgencyCalculator.swift */; };
+		5F822AD1F83855D60359CB8F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C980EEE04C97FF9815A7631B /* Theme.swift */; };
 		6517792CF940A74B69ED8FC4 /* ArchivedCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C478BCEC5672B1253FA0809 /* ArchivedCategoriesView.swift */; };
 		683D78464BD3C9FBBE5D2367 /* DDCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5C345B16814F527FCF426 /* DDCategory.swift */; };
 		68537A07B2DE60DF57AEE2F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7EF3589B7962FD1C4A1890 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		7123DB2A843D3F65688EF4D7 /* DateFormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EB9A97E94E9BD89500340 /* DateFormatService.swift */; };
 		73148E8B9B5C8FD88DBC585C /* DeadlineBoardWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0DAC0796D6CACD1DDCBBEE78 /* DeadlineBoardWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		75EF5E1123ECC87FD7B0C6A1 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502B9A98C920D953164534D /* ColorExtension.swift */; };
+		7D8B1A959A9A8626A79D0208 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C980EEE04C97FF9815A7631B /* Theme.swift */; };
 		840688E42D661094F9DEDB39 /* DDDeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD71E12414143B5E5339D4 /* DDDeadline.swift */; };
 		8648E547490F0CE8726EBE7B /* ProgressCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BB81DE6331DA4D912C8157 /* ProgressCalculator.swift */; };
 		8B03809A05B27AA753232E8F /* ModelContextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C193B8F5DC301B9094AB81 /* ModelContextExtension.swift */; };
@@ -51,6 +53,7 @@
 		B362ED4055EACD1898085668 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD680972C5276541BC56BBD7 /* NotificationService.swift */; };
 		B92E2EB0D2A0D07459F56E1C /* DDDeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD71E12414143B5E5339D4 /* DDDeadline.swift */; };
 		C205F4A0A18DED3A8403FAC1 /* DateFormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EB9A97E94E9BD89500340 /* DateFormatService.swift */; };
+		C2440ACDC9E28DE2014E059D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C980EEE04C97FF9815A7631B /* Theme.swift */; };
 		C8AC0661EF6C8454D3CA9CA0 /* SharedModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78FDE5859B4ED082BB9DD71 /* SharedModelContainer.swift */; };
 		CAE379A7B49EEA9E02531844 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4130DD3890A8ED31E5DFC5F /* DashboardView.swift */; };
 		CDF691D7F1944F7A65F83AFE /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76DB50E89BB123279C6D27 /* AppConstants.swift */; };
@@ -114,6 +117,7 @@
 		C4130DD3890A8ED31E5DFC5F /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		C502B9A98C920D953164534D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		C6E7D3F121986396C6CA0E3F /* DeadlineBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeadlineBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C980EEE04C97FF9815A7631B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		CB7EF3589B7962FD1C4A1890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD680972C5276541BC56BBD7 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		D180BEC1B3F4920E330475C8 /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 			children = (
 				EC76DB50E89BB123279C6D27 /* AppConstants.swift */,
 				C502B9A98C920D953164534D /* ColorExtension.swift */,
+				C980EEE04C97FF9815A7631B /* Theme.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -330,7 +335,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					FE19EA5449BF0B91FBD3A489 = {
-						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -394,6 +398,7 @@
 				E7CFDCE1E0F03BA09E6D0824 /* ProgressCalculator.swift in Sources */,
 				A173B494144E32FA45A10BD4 /* SettingsView.swift in Sources */,
 				A151887F03001510627AC4CD /* SharedModelContainer.swift in Sources */,
+				5F822AD1F83855D60359CB8F /* Theme.swift in Sources */,
 				0B435F46767E680E095CE52B /* UrgencyCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +420,7 @@
 				963E7938E294C5EC6DA00FE4 /* NotificationService.swift in Sources */,
 				8648E547490F0CE8726EBE7B /* ProgressCalculator.swift in Sources */,
 				F8739E6B8153B2F2E45863D5 /* SharedModelContainer.swift in Sources */,
+				C2440ACDC9E28DE2014E059D /* Theme.swift in Sources */,
 				505F7E222026C5B3DE293239 /* UrgencyCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +445,7 @@
 				AAC6FF48D09FDC8756EB4560 /* ProgressWidget.swift in Sources */,
 				C8AC0661EF6C8454D3CA9CA0 /* SharedModelContainer.swift in Sources */,
 				0121B34FE4CF4898168F7019 /* SingleCategoryWidget.swift in Sources */,
+				7D8B1A959A9A8626A79D0208 /* Theme.swift in Sources */,
 				9F5DC0559CBDB357754B092A /* UrgencyCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +525,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3D7NGLAC4R;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -535,6 +543,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3D7NGLAC4R;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -563,7 +572,6 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.deadlineboard.app.widget;
-				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
@@ -585,7 +593,6 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.deadlineboard.app.widget;
-				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};

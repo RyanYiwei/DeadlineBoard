@@ -13,6 +13,7 @@ struct DeadlineBoardApp: App {
     var body: some Scene {
         WindowGroup {
             DashboardView()
+                .preferredColorScheme(.light)
                 .task {
                     await reconcileNotifications()
                 }
@@ -22,6 +23,7 @@ struct DeadlineBoardApp: App {
         #if os(macOS)
         Settings {
             SettingsView()
+                .preferredColorScheme(.light)
         }
         .modelContainer(container)
         #endif

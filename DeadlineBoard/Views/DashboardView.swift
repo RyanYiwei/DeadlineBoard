@@ -28,14 +28,10 @@ struct DashboardView: View {
                 )
                 .id(category.id)
             } else {
-                ContentUnavailableView(
-                    "选择一个分类",
-                    systemImage: "sidebar.left",
-                    description: Text("从左侧选择分类查看详情")
-                )
+                emptyDetail
             }
         }
-        .navigationTitle("Deadline Board")
+        .toolbarBackground(.hidden, for: .windowToolbar)
         .safeAreaInset(edge: .bottom) {
             if !SharedModelContainer.isUsingSharedStore {
                 HStack(spacing: 6) {
@@ -100,22 +96,54 @@ struct DashboardView: View {
         }
     }
 
+    // MARK: - Sidebar
+
     private var sidebar: some View {
-        List(selection: $selectedCategory) {
-            if categories.isEmpty {
-                emptyState
-            } else {
-                ForEach(categories) { category in
-                    CategoryCardView(category: category)
-                        .tag(category)
-                        .contextMenu {
-                            categoryContextMenu(for: category)
+        VStack(spacing: 0) {
+            ScrollView {
+                VStack(spacing: 0) {
+                    HStack {
+                        Text("分类")
+                            .font(.system(size: 11, weight: .semibold))
+                            .tracking(0.6)
+                            .foregroundStyle(Theme.textSecondary)
+                        Spacer()
+                    }
+                    .padding(.horizontal, 22)
+                    .padding(.top, 14)
+                    .padding(.bottom, 8)
+
+                    LazyVStack(spacing: 6) {
+                        if categories.isEmpty {
+                            sidebarEmptyState
+                        } else {
+                            ForEach(categories) { category in
+                                CategoryCardView(category: category, isSelected: selectedCategory == category)
+                                    .onTapGesture { selectedCategory = category }
+                                    .contextMenu { categoryContextMenu(for: category) }
+                            }
                         }
+                    }
+                    .padding(.horizontal, 12)
                 }
-                .onMove(perform: moveCategories)
             }
+
+            Divider()
+                .opacity(0.3)
+
+            HStack(spacing: 6) {
+                Image(systemName: "calendar")
+                    .font(.system(size: 12))
+                    .foregroundStyle(Theme.textSecondary)
+                Text("今天 · \(DateFormatService.todayText())")
+                    .font(.system(size: 12))
+                    .foregroundStyle(Theme.textSecondary)
+            }
+            .padding(.horizontal, 22)
+            .padding(.vertical, 14)
         }
-        .listStyle(.sidebar)
+        .background(Theme.sidebarBg)
+        .navigationSplitViewColumnWidth(min: 260, ideal: 300, max: 360)
         .toolbar {
             ToolbarItemGroup {
                 Button(action: { showingArchived = true }) {
@@ -128,21 +156,53 @@ struct DashboardView: View {
         }
     }
 
-    private var emptyState: some View {
+    private var sidebarEmptyState: some View {
         VStack(spacing: 12) {
-            Image(systemName: "tray")
-                .font(.system(size: 40))
-                .foregroundStyle(.secondary)
+            Circle()
+                .fill(Theme.cardBg)
+                .frame(width: 64, height: 64)
+                .overlay {
+                    Image(systemName: "tray")
+                        .font(.system(size: 24))
+                        .foregroundStyle(Theme.textSecondary)
+                }
+
             Text("还没有分类")
-                .font(.headline)
-                .foregroundStyle(.secondary)
+                .font(.system(size: 15, weight: .bold))
+                .foregroundStyle(Theme.textDark)
+
             Text("点击右上角 + 创建第一个分类")
-                .font(.caption)
-                .foregroundStyle(.tertiary)
+                .font(.system(size: 12))
+                .foregroundStyle(Theme.textSecondary)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 40)
+    }
+
+    private var emptyDetail: some View {
+        VStack(spacing: 16) {
+            Circle()
+                .fill(Theme.cardBg)
+                .frame(width: 64, height: 64)
+                .overlay {
+                    Image(systemName: "sidebar.left")
+                        .font(.system(size: 24))
+                        .foregroundStyle(Theme.textSecondary)
+                }
+
+            Text("选择一个分类")
+                .font(.system(size: 17, weight: .bold))
+                .foregroundStyle(Theme.textDark)
+
+            Text("从左侧选择分类查看详情")
+                .font(.system(size: 13))
+                .foregroundStyle(Theme.textSecondary)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding()
+        .background(Theme.background)
     }
+
+    // MARK: - Actions
 
     @ViewBuilder
     private func categoryContextMenu(for category: DDCategory) -> some View {
@@ -169,14 +229,5 @@ struct DashboardView: View {
         } else {
             showSaveError = true
         }
-    }
-
-    private func moveCategories(from source: IndexSet, to destination: Int) {
-        var ordered = categories.sorted(by: { $0.sortOrder < $1.sortOrder })
-        ordered.move(fromOffsets: source, toOffset: destination)
-        for (index, cat) in ordered.enumerated() {
-            cat.sortOrder = index
-        }
-        modelContext.saveAndReloadWidgets()
     }
 }

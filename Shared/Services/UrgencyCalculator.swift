@@ -15,11 +15,21 @@ enum UrgencyLevel: Int, Comparable {
 
     var color: Color {
         switch self {
-        case .overdue, .critical: .red
-        case .urgent: .orange
-        case .warning: .yellow
-        case .normal: .green
-        case .none: .secondary
+        case .overdue, .critical: Theme.overdueFg
+        case .urgent: Theme.urgentFg
+        case .warning: Theme.soonFg
+        case .normal: Theme.calmFg
+        case .none: Theme.textTertiary
+        }
+    }
+
+    var badgeBg: Color {
+        switch self {
+        case .overdue, .critical: Theme.overdueBg
+        case .urgent: Theme.urgentBg
+        case .warning: Theme.soonBg
+        case .normal: Theme.calmBg
+        case .none: Theme.calmBg
         }
     }
 
