@@ -28,7 +28,7 @@ struct DashboardView: View {
                 )
                 .id(category.id)
             } else {
-                emptyDetail
+                HomePageView()
             }
         }
         .toolbarBackground(.hidden, for: .windowToolbar)
@@ -131,14 +131,19 @@ struct DashboardView: View {
             Divider()
                 .opacity(0.3)
 
-            HStack(spacing: 6) {
-                Image(systemName: "calendar")
-                    .font(.system(size: 12))
-                    .foregroundStyle(Theme.textSecondary)
-                Text("今天 · \(DateFormatService.todayText())")
-                    .font(.system(size: 12))
-                    .foregroundStyle(Theme.textSecondary)
+            Button {
+                selectedCategory = nil
+            } label: {
+                HStack(spacing: 6) {
+                    Image(systemName: "calendar")
+                        .font(.system(size: 12))
+                        .foregroundStyle(selectedCategory == nil ? Theme.textDark : Theme.textSecondary)
+                    Text("今天 · \(DateFormatService.todayText())")
+                        .font(.system(size: 12))
+                        .foregroundStyle(selectedCategory == nil ? Theme.textDark : Theme.textSecondary)
+                }
             }
+            .buttonStyle(.plain)
             .padding(.horizontal, 22)
             .padding(.vertical, 14)
         }
@@ -177,29 +182,6 @@ struct DashboardView: View {
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 40)
-    }
-
-    private var emptyDetail: some View {
-        VStack(spacing: 16) {
-            Circle()
-                .fill(Theme.cardBg)
-                .frame(width: 64, height: 64)
-                .overlay {
-                    Image(systemName: "sidebar.left")
-                        .font(.system(size: 24))
-                        .foregroundStyle(Theme.textSecondary)
-                }
-
-            Text("选择一个分类")
-                .font(.system(size: 17, weight: .bold))
-                .foregroundStyle(Theme.textDark)
-
-            Text("从左侧选择分类查看详情")
-                .font(.system(size: 13))
-                .foregroundStyle(Theme.textSecondary)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Theme.background)
     }
 
     // MARK: - Actions

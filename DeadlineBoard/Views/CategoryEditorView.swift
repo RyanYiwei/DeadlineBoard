@@ -13,6 +13,7 @@ struct CategoryEditorView: View {
     @State private var name: String
     @State private var selectedColorHex: String
     @State private var selectedIcon: String
+    @State private var hexInput: String
     @FocusState private var nameFieldFocused: Bool
 
     init(mode: CategoryEditorMode, onSave: @escaping (String, String, String) -> Void) {
@@ -24,10 +25,12 @@ struct CategoryEditorView: View {
             _name = State(initialValue: "")
             _selectedColorHex = State(initialValue: CategoryPalette.all[0].hex)
             _selectedIcon = State(initialValue: "folder.fill")
+            _hexInput = State(initialValue: CategoryPalette.all[0].hex.replacingOccurrences(of: "#", with: ""))
         case .edit(let category):
             _name = State(initialValue: category.name)
             _selectedColorHex = State(initialValue: category.colorHex)
             _selectedIcon = State(initialValue: category.iconName)
+            _hexInput = State(initialValue: category.colorHex.replacingOccurrences(of: "#", with: "").uppercased())
         }
     }
 
@@ -133,6 +136,38 @@ struct CategoryEditorView: View {
                         .buttonStyle(.plain)
                         .help(pal.name)
                     }
+
+                    ColorPicker("", selection: colorPickerBinding, supportsOpacity: false)
+                        .labelsHidden()
+                        .help("自定义颜色")
+                }
+
+                HStack(spacing: 6) {
+                    Text("#")
+                        .font(.system(size: 13, weight: .medium, design: .monospaced))
+                        .foregroundStyle(Theme.textSecondary)
+                    TextField("HEX", text: $hexInput)
+                        .textFieldStyle(.plain)
+                        .font(.system(size: 13, weight: .medium, design: .monospaced))
+                        .foregroundStyle(Theme.textPrimary)
+                        .frame(width: 72)
+                        .onSubmit { applyHexInput() }
+                    Circle()
+                        .fill(Color(hex: selectedColorHex) ?? .gray)
+                        .frame(width: 16, height: 16)
+                }
+                .padding(.horizontal, 10)
+                .padding(.vertical, 6)
+                .background(
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(Color(hex: "#F1EBE0")!)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(Theme.divider, lineWidth: 1)
+                        )
+                )
+                .onChange(of: selectedColorHex) { _, newValue in
+                    hexInput = newValue.replacingOccurrences(of: "#", with: "").uppercased()
                 }
             }
             .padding(.bottom, 18)
@@ -197,5 +232,27 @@ struct CategoryEditorView: View {
         .frame(width: 400)
         .background(Theme.background)
         .onAppear { nameFieldFocused = true }
+    }
+
+    private var colorPickerBinding: Binding<Color> {
+        Binding(
+            get: { Color(hex: selectedColorHex) ?? .blue },
+            set: { newColor in
+                if let hex = newColor.toHex() {
+                    selectedColorHex = hex
+                }
+            }
+        )
+    }
+
+    private func applyHexInput() {
+        let cleaned = hexInput.trimmingCharacters(in: .whitespacesAndNewlines)
+            .replacingOccurrences(of: "#", with: "")
+            .uppercased()
+        if cleaned.count == 6, Color(hex: cleaned) != nil {
+            selectedColorHex = "#" + cleaned
+        } else {
+            hexInput = selectedColorHex.replacingOccurrences(of: "#", with: "").uppercased()
+        }
     }
 }

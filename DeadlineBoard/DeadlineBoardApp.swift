@@ -11,12 +11,19 @@ struct DeadlineBoardApp: App {
     }
 
     var body: some Scene {
-        WindowGroup {
-            DashboardView()
+        MenuBarExtra("Deadline Board", systemImage: "calendar.badge.clock") {
+            MenuBarView()
                 .preferredColorScheme(.light)
                 .task {
                     await reconcileNotifications()
                 }
+        }
+        .menuBarExtraStyle(.window)
+        .modelContainer(container)
+
+        Window("Deadline Board", id: "main") {
+            DashboardView()
+                .preferredColorScheme(.light)
         }
         .modelContainer(container)
 

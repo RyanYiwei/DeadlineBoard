@@ -1,0 +1,17 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="iconShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#2F3A37" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <!-- macOS Big Sur grid: 824x824 rounded square centered in 1024 canvas, transparent margin -->
+  <rect x="100" y="100" width="824" height="824" rx="185" ry="185" fill="#8DB0C4" filter="url(#iconShadow)"/>
+  <!-- progress ring track -->
+  <circle cx="512" cy="512" r="223" fill="none" stroke="#FFFFFF" stroke-width="63" opacity="0.32"/>
+  <!-- progress arc (270deg) toward deadline -->
+  <path d="M512 289 A223 223 0 1 1 289 512" fill="none" stroke="#FFFFFF" stroke-width="63" stroke-linecap="round"/>
+  <!-- deadline point -->
+  <circle cx="289" cy="512" r="41" fill="#E79B82"/>
+  <!-- center check -->
+  <path d="M439 517 l49 56 l102 -126" fill="none" stroke="#E79B82" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

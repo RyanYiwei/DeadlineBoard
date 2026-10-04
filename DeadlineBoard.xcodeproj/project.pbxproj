@@ -10,10 +10,12 @@
 		0121B34FE4CF4898168F7019 /* SingleCategoryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C7F982D0E8CA3677B005DE /* SingleCategoryWidget.swift */; };
 		091315DD9C1C3B802354A8CE /* MultiCategoryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA7626CCC70C2EB8E117FEB /* MultiCategoryWidget.swift */; };
 		0B435F46767E680E095CE52B /* UrgencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D20849DE50CAB5AC57A36 /* UrgencyCalculator.swift */; };
+		0CBAFD12B3A209AF424FA1E8 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31D556C1DE0E563E399801D /* MenuBarView.swift */; };
 		0DBAB9442222F60E766306FC /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342B3F1FC9E9427445FEB02D /* DeepLinkHandler.swift */; };
 		15CC9E04F60A6D06409E72EF /* DDReminderRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544EEEB9800271F05BD52AB8 /* DDReminderRule.swift */; };
 		1B61CD99D79485C453EF2B11 /* DDActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A794950C73825CD2E80A96D3 /* DDActionItem.swift */; };
 		1D38E4CDE76E7D660881D7FF /* ProgressCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BB81DE6331DA4D912C8157 /* ProgressCalculator.swift */; };
+		1E2138D92B36E451396D386D /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BA37B1B4B2337A35F82BAF /* HomePageView.swift */; };
 		1F2F1FE4E58390527D9CBF45 /* DeadlineQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38541880A142D91682B82CE3 /* DeadlineQueryService.swift */; };
 		1F810D53D31047F1FF1BF84B /* DeadlineBoardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087161CFCEAB1204E20F596 /* DeadlineBoardApp.swift */; };
 		1FD4C7A197B1B2999927B758 /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D180BEC1B3F4920E330475C8 /* CategoryCardView.swift */; };
@@ -103,6 +105,7 @@
 		2E6B68096630DD508EA36EE7 /* CategoryEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEditorView.swift; sourceTree = "<group>"; };
 		30E8703E635E2E01739D5835 /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
 		342B3F1FC9E9427445FEB02D /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
+		34BA37B1B4B2337A35F82BAF /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		38541880A142D91682B82CE3 /* DeadlineQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineQueryService.swift; sourceTree = "<group>"; };
 		5087161CFCEAB1204E20F596 /* DeadlineBoardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineBoardApp.swift; sourceTree = "<group>"; };
 		544EEEB9800271F05BD52AB8 /* DDReminderRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDReminderRule.swift; sourceTree = "<group>"; };
@@ -121,6 +124,7 @@
 		CB7EF3589B7962FD1C4A1890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD680972C5276541BC56BBD7 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		D180BEC1B3F4920E330475C8 /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
+		D31D556C1DE0E563E399801D /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 		D847924B591F3CA7CD270233 /* DeadlineBoardWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineBoardWidgetBundle.swift; sourceTree = "<group>"; };
 		D8E733992862B51FE7D82CF4 /* DeadlineBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeadlineBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF42BB94B3808C10E92B46B6 /* DeadlineBoardWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeadlineBoardWidget.entitlements; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 				A1782383F19BB4B2BE87CB12 /* DeadlineEditorView.swift */,
 				AD4051A52F935247E71FFB02 /* DeadlineRowView.swift */,
 				342B3F1FC9E9427445FEB02D /* DeepLinkHandler.swift */,
+				34BA37B1B4B2337A35F82BAF /* HomePageView.swift */,
+				D31D556C1DE0E563E399801D /* MenuBarView.swift */,
 				FE4DB05C5BAD5EBFCEB24F09 /* SettingsView.swift */,
 			);
 			path = Views;
@@ -393,6 +399,8 @@
 				1F2F1FE4E58390527D9CBF45 /* DeadlineQueryService.swift in Sources */,
 				69BC1939F3043C17C6159A3C /* DeadlineRowView.swift in Sources */,
 				0DBAB9442222F60E766306FC /* DeepLinkHandler.swift in Sources */,
+				1E2138D92B36E451396D386D /* HomePageView.swift in Sources */,
+				0CBAFD12B3A209AF424FA1E8 /* MenuBarView.swift in Sources */,
 				D4162CC33A5A9039CAE6291A /* ModelContextExtension.swift in Sources */,
 				A72F4A9E467649FF11DA0C51 /* NotificationService.swift in Sources */,
 				E7CFDCE1E0F03BA09E6D0824 /* ProgressCalculator.swift in Sources */,

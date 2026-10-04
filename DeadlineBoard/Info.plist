@@ -22,6 +22,8 @@
 	<string>Deadline Board</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.productivity</string>
+	<key>LSUIElement</key>
+	<true/>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

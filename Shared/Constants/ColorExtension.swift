@@ -16,4 +16,13 @@ extension Color {
             blue: Double(rgb & 0xFF) / 255.0
         )
     }
+
+    func toHex() -> String? {
+        let nsColor = NSColor(self)
+        guard let rgb = nsColor.usingColorSpace(.sRGB) else { return nil }
+        return String(format: "#%02X%02X%02X",
+                      Int(round(rgb.redComponent * 255)),
+                      Int(round(rgb.greenComponent * 255)),
+                      Int(round(rgb.blueComponent * 255)))
+    }
 }
